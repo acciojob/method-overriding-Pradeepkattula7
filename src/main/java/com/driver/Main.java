@@ -8,11 +8,7 @@ class A
 }
 class B extends A{
 
-    public String method(){
-       return super.meth();
-    }
-
-   public String meth(){
+    public String meth(){
         return "Method is overridden in Extendend class B";
     }
 }
@@ -22,9 +18,12 @@ public class Main {
 
         B obj=new B();
 
-        System.out.println(obj.method());
+        obj.meth();
 
-        System.out.println(obj.meth());
+
+        B obj1=new B();
+
+        obj1.meth();
 
     }
 }
